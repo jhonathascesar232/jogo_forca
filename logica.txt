@@ -1,0 +1,9 @@
+palavra = 'palavra'
+
+ler letra
+itera palavra
+verifica se letra e igual letra da palavra
+    se letras iguais
+        salva letra em copia
+    senao
+        passa para proxima letra da palavra
