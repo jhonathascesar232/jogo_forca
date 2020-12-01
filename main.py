@@ -47,14 +47,15 @@ def lerLetra(chave, c):
 
 #ler a palavra secreta
 def lerArquivo():
-    from os import path.abspath, path.dirname
+    from os import path
     
-    def main(args = None):
-        print(__file__)
-        print(path.abspath(path.dirname(__file__)))
-    
-        return 0
-    main()
+    print(__file__) #str do aquivo py
+    arquivo = path.abspath(path.dirname(__file__)) + "/PALAVRA_SECRETA_AKI.txt" #str do diretorio
+    with open(arquivo ,'r') as f:
+        palavra = f.read()
+        print(palavra)
+
+    return palavra
 
 #loop do jogo
 def run():
