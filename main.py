@@ -45,6 +45,17 @@ def lerLetra(chave, c):
 
     return chute, c
 
+#ler a palavra secreta
+def lerArquivo():
+    from os import path.abspath, path.dirname
+    
+    def main(args = None):
+        print(__file__)
+        print(path.abspath(path.dirname(__file__)))
+    
+        return 0
+    main()
+
 #loop do jogo
 def run():
     tentativas = 1
@@ -75,7 +86,7 @@ def run():
         
 #funcao principal
 def main():
-    run()
+    lerArquivo()
 
 if(__name__ == '__main__'):
     main()
